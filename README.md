@@ -1,17 +1,17 @@
-**Turn quicktime movies into animated gifs & upload them to dropbox**
+**Turn Quicktime movies into animated gifs & automagically upload them to Dropbox!**
 
-**Inspired by:** [Alex Dergachev's](https://github.com/dergachev/) awesome [gist](https://gist.github.com/dergachev/4627207)
+**Inspired by:** this [gist](https://gist.github.com/dergachev/4627207) from [Alex Dergachev](https://github.com/dergachev/)
 
-**Dependencies:** ffmpeg, Xquartz, gifsicle (use homebrew) and [Dropbox-Uploader](https://github.com/andreafabrizi/Dropbox-Uploader)
+**Dependencies:** ffmpeg, X-Quartz, gifsicle (available via homebrew) and [Dropbox-Uploader](https://github.com/andreafabrizi/Dropbox-Uploader)
 
-After you've squared away dependencies:
+After you've squared away the dependencies:
 
 1. Add the code below to your `.bash_profile` & alias Dropbox Uploader as `dbu`
 2. Run `dbu` & follow the setup procedure to create a new app & API keys.
 3. Try converting & upload a movie `$ movgif input.mov [max-width]`
 4. Have fun!
 
-```
+```shell
 movgif(){
 
   # check for input file
